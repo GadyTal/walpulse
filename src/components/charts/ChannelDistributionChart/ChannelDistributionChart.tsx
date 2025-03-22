@@ -18,7 +18,7 @@ export const ChannelDistributionChart = ({ transactions }: ChannelDistributionCh
             <ResponsivePie
                 layers={[CenteredBackround, 'arcs', 'arcLabels', 'arcLinkLabels', 'legends',]}
                 data={data}
-                margin={{ top:40, right: 120, bottom: 40, left: 120 }}
+                margin={{ top: 50, right: 120, bottom: 40, left: 120 }}
                 innerRadius={0.55}
                 padAngle={2.5}
                 cornerRadius={8}
@@ -33,7 +33,6 @@ export const ChannelDistributionChart = ({ transactions }: ChannelDistributionCh
                 enableArcLabels={false}
                 arcLinkLabelsOffset={7}
                 arcLinkLabelsTextColor={theme.colors.neutral_600}
-                // arcLinkLabelsDiagonalLength={48}
                 arcLinkLabelsStraightLength={36}
                 arcLinkLabelsTextOffset={16}
                 arcLinkLabelsThickness={1}
